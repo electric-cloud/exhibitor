@@ -1,0 +1,2 @@
+Implementation-Title=exhibitor-core
+Implementation-Version=1.7.1

@@ -43,7 +43,7 @@
         <lucene-version>3.6.0</lucene-version>
         <aws-version>1.11.128</aws-version>
         <mockito-version>1.8.5</mockito-version>
-        <zookeeper-version>3.4.5</zookeeper-version>
+        <zookeeper-version>3.4.8</zookeeper-version>
         <jsr166-version>1.7.0</jsr166-version>
         <consul-version>0.14.0</consul-version>
         <embedded-consul-version>0.3.1</embedded-consul-version>

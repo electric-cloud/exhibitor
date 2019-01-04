@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>exhibitor-war</groupId>
     <artifactId>exhibitor-war</artifactId>
-    <version>1.0</version>
+    <version>1.7.1</version>
 
     <dependencies>
         <dependency>
             <groupId>io.soabase.exhibitor</groupId>
             <artifactId>exhibitor-standalone</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.1</version>
         </dependency>
     </dependencies>
 
@@ -22,8 +22,9 @@
                 <configuration>
                     <overlays>
                         <overlay>
-                            <groupId>com.netflix.exhibitor</groupId>
-                            <artifactId>exhibitor-standalone</artifactId>
+                            <id>exhibitor-standalone</id>
+                            <!--<groupId>com.netflix.exhibitor</groupId>-->
+                            <!--<artifactId>exhibitor-standalone</artifactId>-->
                             <type>jar</type>
                             <includes>
                                 <include>WEB-INF/</include>
@@ -37,6 +38,7 @@
                             <targetPath>WEB-INF/classes</targetPath>
                         </overlay>
                     </overlays>
+                    <webXml>../../../WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>
