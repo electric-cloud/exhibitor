@@ -16,11 +16,12 @@
 
 package com.netflix.exhibitor.core.state;
 
-import org.apache.curator.utils.CloseableUtils;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Collections;
 import java.util.jar.Manifest;
+
+import org.apache.curator.utils.CloseableUtils;
 
 public class ManifestVersion
 {
@@ -71,7 +72,7 @@ public class ManifestVersion
             CloseableUtils.closeQuietly(stream);
         }
 
-        version = (localVersion != null) ? localVersion : "dev";
+        version = (localVersion != null) ? localVersion : "1.7.1";
     }
 
     public String getVersion()
